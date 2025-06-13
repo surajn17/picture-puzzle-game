@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+#controls {
+  margin-bottom: 20px;
+}
+
+#game-board {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  border: 2px solid #333;
+}
+
+.tile {
+  background-size: 300px 300px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+
+.tile:hover {
+  opacity: 0.8;
+}
+
+#status {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
